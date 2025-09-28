@@ -1,6 +1,6 @@
 {
   "name": "Lista de compras",
-  "short_name": "Lista de compras",
+  "short_name": "Compras",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
