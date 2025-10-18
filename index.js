@@ -45,7 +45,18 @@ botaoAdicionar.addEventListener("click", (evento) => {
     itemData.innerText = dataCompleta;
     itemData.classList.add("texto-data");
     itemDaLista.appendChild(itemData);
-
     listaDeCompras.appendChild(itemDaLista);
+    verificarListaVazia();
 });
 
+const mensagemListaVazia = document.querySelector(".mensagem-lista-vazia");
+function verificarListaVazia() {
+    const itemDaLista = listaDeCompras.querySelectorAll("li");
+    if (itemDaLista.length === 0) {
+        mensagemListaVazia.style.display = "block"
+    } else {
+        mensagemListaVazia.style.display = "none"
+    }
+};
+
+verificarListaVazia();
